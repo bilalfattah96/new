@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=se, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt('enter your phy marks');
+        var b = prompt('enter your maths marks');
+        var c = prompt('enter your chem marks');
+        var d = prompt('enter your eng marks');
+        var e = prompt('enter your bio marks');
+        var om = parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d)+parseInt(e);
+        var tm = 500;
+        if(a<101 && b<101 && c<101 && d<101 && e<101  ){
+        var per=om*100/tm;
+        document.write(per + ' % ');
+    
+    if(per>=80){
+        document.write('A+');
+    }
+        else if(per>=70){
+document.write('A');
+        }
+        else if(per>=60){
+            document.write('B');
+        }
+        else {
+            document.write('fail')
+        }
+    }
+    else{
+        document.write('error');
+    }
+                 
+    </script>
+</body>
+</html>
